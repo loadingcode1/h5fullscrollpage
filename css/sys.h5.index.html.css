@@ -1,0 +1,242 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: arial;
+    text-align: center;
+    background-color: #fff;
+    margin:0 auto;
+    max-width: 768px;
+}
+
+* {
+    margin:0 auto;
+    max-width: 768px;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+
+
+.item1 {
+    background-image: url("../images/bg1.png");
+    background-size:100% 100%;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    margin:0 auto;
+    /*position: relative;*/
+}
+.item2 {
+    background-image: url("../images/bg2.png");
+    background-color: #fff;
+    background-size:100% 100%;
+    width: 100%;
+    height: 100%;
+    margin:0 auto;
+}
+.item3 {
+    background-color: #008972;
+}
+.item4 {
+    background-color: #F5C564;
+}
+.item5 {
+    background-color: #F2572D;
+}
+.item6 {
+    background-color: #0067A6;
+}
+.logo{
+    background-image: url("../images/logo.png");
+    background-size:1.22rem 8.03rem;
+    width: 1.22rem;
+    height:8.03rem;
+    position: absolute;
+    left:50%;
+    top:10%;
+    margin-left:-0.61rem;
+}
+.icon{
+    position: absolute;
+    left:-.3rem;
+    top:-.3rem;
+
+}
+.icon1{
+    margin: -.3rem 0 0 -.180rem;
+    animation: pStrong 14s ease 0s infinite normal none;
+}
+.icon1 img{
+    width: 2.77rem;
+    height:2.75rem;
+}
+.icon2{
+    margin: 7rem 0 0 1.5rem;
+    animation: pStrong 12s ease 0s infinite normal none;
+}
+.icon2 img{
+    width: 1.08rem;
+    height:1.08rem;
+}
+.icon3{
+    right:-.3rem;
+    top:-.3rem;
+    margin: 3rem -1rem 0 5rem;
+    animation: pStrong 10s ease 0s infinite normal none;
+}
+.icon3 img,.icon4 img{
+    width: 2.33rem;
+    height:2.33rem;
+}
+.icon4{
+    top:8rem;
+    left:1rem;
+    margin: 3rem 0 -1rem 2rem;
+    animation: pStrong 13s ease 0s infinite normal none;
+}
+.icon5{
+    margin: 2rem 0 0 5.5rem;
+    animation: pStrong 15s ease 0s infinite normal none;
+}
+.icon5 img{
+    width: .61rem;
+    height:.61rem;
+}
+@keyframes pStrong{
+    0 { transform: translate3d(0,0,0); }
+    25%{ transform: translate3d(-20px,20px,0); }
+    50%{ transform: translate3d(0,0,0); }
+    75%{ transform: translate3d(-20px,-20px,0); }
+    100%{ transform: translate3d(0,0,0); }
+}
+.item1 .part1 {
+    position: absolute;
+    top: 100px;
+    left: 19%;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(116, 178, 9);
+}
+.item1 .part2 {
+    position: absolute;
+    bottom: 100px;
+    right: 19%;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(116, 178, 9);
+}
+.item3 .part1 {
+    position: absolute;
+    top: 100px;
+    left: 19%;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(116, 178, 9);
+}
+.item3 .part2 {
+    position: absolute;
+    bottom: 100px;
+    right: 19%;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(116, 178, 9);
+}
+.item2 .part1 {
+    position: absolute;
+    top: 100px;
+    right: 19%;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(116, 178, 9);
+}
+.item2 .part3 {
+    position: absolute;
+    bottom: 60px;
+    left: 19%;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(116, 178, 9);
+}
+.item2 .part2 {
+    position: absolute;
+    top: 100px;
+    left: 19%;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(116, 178, 9);
+}
+.item4 .part1 {
+    position: absolute;
+    top: 100px;
+    left: 19%;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(116, 178, 9);
+}
+.item4 .part2 {
+    position: absolute;
+    bottom: 100px;
+    right: 19%;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(116, 178, 9);
+}
+.item5 .part1 {
+    position: absolute;
+    bottom: 100px;
+    right: 19%;
+    text-align: center;
+    width: 150px;
+    height: 100px;
+    background-color: rgb(116, 178, 9);
+}
+.item5 .part2 {
+    position: absolute;
+    top: 100px;
+    left: 19%;
+    text-align: center;
+    width: 150px;
+    height: 100px;
+    background-color: rgb(116, 178, 9);
+}
+
+.item6 .part2 {
+    position: absolute;
+    top: 100px;
+    left: 19%;
+    text-align: center;
+    width: 150px;
+    height: 100px;
+    background-color: rgb(116, 178, 9);
+}
+.item6 .part1 {
+    position: absolute;
+    bottom: 100px;
+    left: 19%;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(116, 178, 9);
+}
+/*.item6 {
+    background-image: url(7634.jpg);
+    background-position: center;
+}*/
+/**
+*
+*/
+
+
+
+
