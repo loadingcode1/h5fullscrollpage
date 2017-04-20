@@ -1,0 +1,414 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: arial;
+    text-align: center;
+    background-color: #fff;
+    margin:0 auto;
+    max-width: 768px;
+}
+
+* {
+    margin:0 auto;
+    max-width: 768px;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+.item{
+    background-size:100% 100%;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    margin:0 auto;
+}
+
+.item1 {
+    background-image: url("../images/bg1.png");
+}
+.item2 {
+    background-image: url("../images/bg2.png");
+}
+.item3 {
+    background-image: url("../images/bg3.png");
+}
+.item4 {
+    background-image: url("../images/bg4.png");
+}
+.item5 {
+    background-image: url("../images/bg5.png");
+}
+.item6 {
+    background-image: url("../images/bg6.png");
+}
+.logo{
+    background-image: url("../images/logo.png");
+    background-size:1.22rem 8.03rem;
+    width: 1.22rem;
+    height:8.03rem;
+    position: absolute;
+    left:50%;
+    top:10%;
+    margin-left:-0.61rem;
+}
+.icon{
+    position: absolute;
+    left:-.3rem;
+    top:-.3rem;
+}
+.icon1{
+    margin: -.3rem 0 0 -.180rem;
+    animation: pStrong 14s ease 0s infinite normal none;
+}
+.icon1 img{
+    width: 2.77rem;
+    height:2.75rem;
+}
+.icon2{
+    margin: 7rem 0 0 1.5rem;
+    animation: pStrong 12s ease 0s infinite normal none;
+}
+.icon2 img{
+    width: 1.08rem;
+    height:1.08rem;
+}
+.icon3{
+    right:-.3rem;
+    top:-.3rem;
+    margin: 3rem -1rem 0 5rem;
+    animation: pStrong 10s ease 0s infinite normal none;
+}
+.icon3 img,.icon4 img{
+    width: 2.33rem;
+    height:2.33rem;
+}
+.icon4{
+    top:8rem;
+    left:1rem;
+    margin: 3rem 0 -1rem 2rem;
+    animation: pStrong 13s ease 0s infinite normal none;
+}
+.icon5{
+    margin: 2rem 0 0 5.5rem;
+    animation: pStrong 15s ease 0s infinite normal none;
+}
+.icon5 img{
+    width: .61rem;
+    height:.61rem;
+}
+@keyframes pStrong{0{ transform: translate3d(0,0,0)}25%{ transform: translate3d(-20px,20px,0)}
+    50%{ transform: translate3d(0,0,0)}
+    75%{ transform: translate3d(-20px,-20px,0)}
+    100%{ transform: translate3d(0,0,0); }
+}
+
+.tit{
+    position: absolute;
+    top:0;
+    right:0;
+    background-image: url("../images/tit_bg.png");
+    background-size:.9rem 3.4rem;
+    width: .9rem;
+    height:3.4rem;
+    text-align: center;
+}
+.tit span{
+    display: block;
+    position: absolute;
+    top:1.2rem;
+    left:50%;
+    /*margin:0 auto;*/
+    margin-left:-.3rem;
+    width: .6rem;
+    height:.1rem;
+    background-color: #ffffff;
+}
+.tit p{
+    position: absolute;
+    top:1.5rem;
+    left:50%;
+    /*margin:0 auto;*/
+    margin-left:-.3rem;
+    padding: 0;
+    width: .6rem;
+    height:auto;
+    font-size: .56rem;
+    line-height: 110%;
+    color: #fff;
+}
+.company-icon{
+    display:none;
+    position: absolute;
+    top:2rem;
+    left:50%;
+    margin-left:-.51rem;
+}
+.company-icon img{
+    width:1.03rem;
+    height:1.15rem;
+}
+.company-info{
+    position: absolute;
+    top:4.1rem;
+    left:0;
+}
+.company-info p{
+    width: 80%;
+    height:auto;
+    line-height: 180%;
+    font-size: .32rem;
+    color: #ff6201;
+    text-align: left;
+}
+div[state = "next"] .company-icon{
+    display: block;
+    -webkit-animation: confadeInUp 1s linear; animation: confadeInUp 1s linear;
+}
+@-webkit-keyframes confadeInUp{from{opacity:0; top:4rem;}to{opacity:1; top:2rem; }}
+@keyframes confadeInUp{from{opacity:0; top:4rem;}to{opacity:1; top:2rem; }}
+div[state = "next"] .company-info{
+    display: block;
+    -webkit-animation: conInfoUp 1s linear; animation: conInfoUp 1s linear;
+}
+@-webkit-keyframes conInfoUp{from{opacity:0; top:5rem;}to{opacity:1; top:4.1rem; }}
+@keyframes conInfoUp{from{opacity:0; top:5rem;}to{opacity:1; top:4.1rem; }}
+.item3 ul li{
+    width: 100%;
+    height: auto;
+    text-align: left;
+}
+.item3 ul li img{
+    width: 2.1rem;
+    height:1.85rem;
+}
+.point-a{
+    margin-top: 2rem;
+    margin-left: .3rem;
+}
+.point-b{
+    margin-top: .6rem;
+    margin-left: 1.1rem;
+}
+.point-c{
+    margin-top: .5rem;
+    margin-left: .5rem;
+}
+.horn{
+    background-image: url("../images/horn.png");
+    background-size:.23rem .26rem;
+    width: .23rem;
+    height:.26rem;
+    display: inline-block;
+}
+.item3 ul li p{
+    width: auto;
+    display: inline-block;
+    text-align: left;
+    color: #ff6201;
+    vertical-align: middle;
+    padding-left:.1rem;
+}
+.item3 ul li p strong{
+    display: block;
+    font-weight: normal;
+    font-size: .36rem;
+}
+.item3 ul li p em{
+    font-weight: normal;
+    font-style: normal;
+    font-size:.28rem;
+}
+div[state = "next"] .point-a{
+    display: block;
+    -webkit-animation: pointLeftin 1s linear; animation: pointLeftin 1s linear;
+}
+div[state = "next"] .point-b{
+    display: block;
+    -webkit-animation: pointLeftin 2s linear; animation: pointLeftin 2s linear;
+}
+div[state = "next"] .point-c{
+    display: block;
+    -webkit-animation: pointLeftin 3s linear; animation: pointLeftin 3s linear;
+}
+@keyframes -webkit-pointLeftin{ from { opacity: 0; -webkit-transform: translateX(-200px); } to { opacity: 1; -webkit-transform:translateY(0); }}
+@keyframes pointLeftin{ from { opacity: 0; transform: translateX(-200px); } to { opacity: 1; transform:translateY(0); }}
+
+.item4 .tit span,.item5 .tit span{
+    top:1rem;
+    height:.08rem;
+}
+.item4 .tit p,.item5 .tit p {
+    top: 1.24rem;
+    font-size: .4rem;
+}
+.gestit{
+    display:inline-block;
+    margin:.1rem auto .1rem;
+    font-size: .28rem;
+    color: #fff;
+    padding: .08rem .35rem;
+    border-radius: .25rem;
+    background:#ff6302;
+    background: -moz-linear-gradient(left, #ff6302, #f68137);
+    background: -webkit-linear-gradient(left, #ff6302, #f68137);
+    background: -ms-linear-gradient(left, #ff6302, #f68137);
+    background: -o-linear-gradient(left, #ff6302, #f68137);
+}
+.gesture{
+    /*position: absolute;*/
+    /*top:5rem;*/
+    /*left:50%;*/
+    /*margin-left:-.86rem;*/
+    margin:.1rem auto 0;
+    -webkit-animation:gesLeftRight 1.8s 1.8s ease-in-out infinite ;
+    -o-animation:gesLeftRight 1.8s 1.8s ease-in-out infinite ;
+    animation:gesLeftRight 1.8s 1.8s ease-in-out infinite ;
+}
+.gesture img{
+    width: 1.72rem;
+    height:1.03rem;
+}
+@-webkit-keyframes gesLeftRight{ 0 { -webkit-transform: translateX(-30px); } 25% { -webkit-transform:translateY(0); }50% { -webkit-transform: translateX(10px); } 100% { -webkit-transform:translateY(0); }}
+@keyframes gesLeftRight{ 0 { transform: translateX(-30px); }25% { transform:translateY(0); }50% { transform: translateX(10px); }100%{ transform:translateY(0); }}
+.item4 .part1 {
+    position: absolute;
+    top: 100px;
+    left: 19%;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(116, 178, 9);
+}
+
+.gestips{
+    width: auto;
+    font-size:.28rem ;
+    text-align: center;
+    margin:.1rem auto;
+    color: #ff6301;
+    position: relative;
+}
+.item4 .part2 {
+    position: absolute;
+    bottom: 100px;
+    right: 19%;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(116, 178, 9);
+}
+.turntable{
+    margin:3rem auto 0;
+    position: relative;
+}
+.turntable img{
+    width: 5.2rem;
+    height:5.2rem;
+}
+.hand{
+    background-image: url("../images/hand.png");
+    -webkit-background-size:.89rem 1.31rem;
+    background-size:.89rem 1.31rem;
+    width: .89rem;
+    height:1.31rem;
+    position: absolute;
+    top: 3.7rem;
+    left: 2.8rem;
+}
+.yjicon{
+    display: none;
+    background-image: url("../images/yjicon.png");
+    -webkit-background-size:1.42rem 1.59rem;
+    background-size:1.42rem 1.59rem;
+    width: 1.42rem;
+    height:1.59rem;
+    margin: 2rem auto 0;
+}
+.item6 strong{
+    display: none;
+    font-weight: normal;
+    width: auto;
+    font-size:.44rem ;
+    text-align: center;
+    margin:.2rem auto;
+    color: #ff6301;
+}
+.item6 em{
+    display: block;
+    font-weight: normal;
+    font-style:normal;
+    width: auto;
+    font-size:.28rem ;
+    text-align: center;
+    margin:.1rem auto 1.4rem;
+    color: #ff6301;
+}
+div[state = "next"] .yjicon{
+    display: block;
+    -webkit-animation: yjicon 2s linear; animation: yjicon 1s linear;
+}
+@-webkit-keyframes yjicon{0%{opacity:0; -webkit-transform: scale3D(1,1,0)}50%{opacity:.5; -webkit-transform: scale3D(1.5,1.5,0)}100%{opacity:1; -webkit-transform: scale3D(1,1,0)}}
+@keyframes yjicon{0%{opacity:1; transform: scale3D(1,1,0)}50%{opacity:0;  transform: scale3D(1.5,1.5,0)}100%{opacity:1; transform: scale3D(1,1,0)}}
+.gestit a{
+    color: #fff;
+}
+.block{
+    display: block;
+}
+div[state = "next"] strong{
+    display: block;
+    -webkit-animation: stongUp 1s linear; animation: stongUp 1s linear;
+}
+div[state = "next"] em{
+    display: block;
+    -webkit-animation: stongUp 1s linear; animation: stongUp 1s linear;
+}
+@-webkit-keyframes stongUp{from{opacity:0; -webkit-transform: translateY(100px)}to{opacity:1; -webkit-transform: translateY(0px) }}
+@keyframes stongUp{from{opacity:0; transform: translateY(100px)}to{opacity:1; transform: translateY(0px) }}
+
+.pop{
+    background-image: url("../images/popbg.png");
+    background-size:5.62rem 6.73rem;
+    width: 5.62rem;
+    height:6.73rem;
+    overflow: hidden;
+    position: absolute;
+    left:50%;
+    top:20%;
+    margin-left:-2.81rem;
+}
+.close{
+    position: absolute;
+    left:.2rem;
+    top:.3rem;
+}
+.close img{
+    width:.5rem;
+    height:.5rem;
+}
+.popimg{
+    width: 2.24rem;
+    height:2.24rem;
+    margin:1.1rem auto .3rem;
+}
+.poptit{
+    width: auto;
+    font-size: .36rem;
+    color: #fff;
+    margin:0 auto .1rem;
+}
+.popcom{
+    font-size: .3rem;
+    width: 80%;
+    margin:0 auto .1rem;
+    line-height: 130%;
+    color: #fff;
+    text-align: left;
+    text-indent: 2em;
+}
+
+
+
+
