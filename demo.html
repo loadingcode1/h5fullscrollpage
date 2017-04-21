@@ -78,21 +78,25 @@
             <!--<h2>page5</h2>-->
             <div class="tit"><span></span><p>推广优势</p></div>
             <div class="turntable"><img src="images/turntable.png" alt="">
-                <div class="shanxing shanxing5">
-                    <div class="sx1"></div>
-                    <div class="sx2"></div>
-                    <div class="sx3"></div>
-
+                <!--<div class="shanxing shanxing5">-->
+                    <!--<div class="sx1"></div>-->
+                    <!--<div class="sx2"></div>-->
+                    <!--<div class="sx3"></div>-->
+                <!--</div>-->
+                <div class="handclick">
+                    <div class="hc1"></div>
+                    <div class="hc2"></div>
+                    <div class="hc3"></div>
                 </div>
 
                 <div class="hand"></div></div>
             <div class="gestips">点击我，了解更多</div>
-
-            <div class="pop" style="display: none">
-                <div class="close"><img src="images/close.png" alt=""></div>
-                <img src="images/app-icon.png" class="popimg" alt="">
-                <p class="poptit">APP</p>
-                <p class="popcom">累计超百万用户，日均DAU达万余，良好的消费体验、高效的转化机制为商户带来稳定的优质客源。</p>
+<!--pop-->
+            <div class="pop">
+                <!--<div class="close"><img src="images/close.png" alt=""></div>-->
+                <!--<img src="images/app-icon.png" class="popimg" alt="">-->
+                <!--<p class="poptit">APP</p>-->
+                <!--<p class="popcom">累计超百万用户，日均DAU达万余，良好的消费体验、高效的转化机制为商户带来稳定的优质客源。</p>-->
             </div>
 
         </div>
@@ -119,7 +123,31 @@
     },'pageHide' : function(dom){
         //console.log(dom);
     }});
-    
+    $(".hc1").click(function () {
+        $(".pop").show();
+        pop("app-icon.png","APP","累计超百万用户，日均DAU达万余，良好的消费体验、高效的转化机制为商户带来稳定的优质客源。");
+    });
+    $(".hc2").click(function () {
+        $(".pop").show();
+        pop("online-icon.png","线上传播","健全的自媒体传播机制结合各类大号、KOL、主流媒体、行业媒体发布传播H5、软文形成完善的线上传播环。");
+    });
+    $(".hc3").click(function () {
+        $(".pop").show();
+        pop("line-icon.png","线下推广","线下城市LED屏幕广告、公共交通广告及楼宇广告配合市场营销活动精准、直接、多频次的向目标用户进行品牌推广，加深用户记忆促成消费。");
+    });
+    $(".close").on("click","body",function (e) {
+        e.preventDefault();
+        $(".pop").css("display","none");
+        //pop("","","");
+    });
+
+//      app
+
+        function pop(img,tit,com) {
+           var pop = "";
+            pop = '<div class="close"><img src="images/close.png" alt=""></div><img src="images/'+img+'" class="popimg" alt=""><p class="poptit">'+tit+'</p><p class="popcom">'+com+'</p>';
+            $(".pop").html(pop);
+        }
     </script>
 </body>
 </html>

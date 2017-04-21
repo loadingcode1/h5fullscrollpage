@@ -369,6 +369,7 @@ div[state = "next"] em{
 @keyframes stongUp{from{opacity:0; transform: translateY(100px)}to{opacity:1; transform: translateY(0px) }}
 
 .pop{
+    display: none;
     background-image: url("../images/popbg.png");
     background-size:5.62rem 6.73rem;
     width: 5.62rem;
@@ -378,6 +379,7 @@ div[state = "next"] em{
     left:50%;
     top:20%;
     margin-left:-2.81rem;
+    z-index: 100;
 }
 .close{
     position: absolute;
@@ -453,5 +455,34 @@ div[state = "next"] em{
 .shanxing5 .sx1{transform: rotate(55deg);background-color: #f00;}
 .shanxing5 .sx2{transform: rotate(-45deg);background-color: #0f0;}
 .shanxing5 .sx3{transform: rotate(-135deg);background-color: #00f;}
+
+.handclick{
+    position: relative;
+    width: 4.5rem;
+    height:4.7rem;
+}
+.handclick .hc1{
+    width: 4.5rem;
+    height:1.7rem;
+    background-color: #f68137;
+    border-top-left-radius:2rem;
+    border-top-right-radius:2rem;
+}
+.handclick .hc2,.handclick .hc3{
+    width: 2.25rem;
+    height:3rem;
+    float: left;
+    background-color: #444444;
+    border-bottom-left-radius:2rem;
+}
+.handclick .hc3{
+    background-color: aquamarine;
+    border-bottom-left-radius:0rem;
+    border-bottom-right-radius:2rem;
+}
+
+
+
+
 
 
