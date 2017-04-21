@@ -286,7 +286,7 @@ div[state = "next"] .point-c{
     width: auto;
     font-size:.28rem ;
     text-align: center;
-    margin:.1rem auto;
+    margin:1rem auto;
     color: #ff6301;
     position: relative;
 }

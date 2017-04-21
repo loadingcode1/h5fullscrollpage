@@ -90,15 +90,15 @@
             <!--<h2>page5</h2>-->
             <div class="tit"><span></span><p>推广优势</p></div>
             <div class="turntable"><img src="images/turntable.png" alt="">
-                <!--<div class="shanxing shanxing5">-->
+                <!--<div class="shanxing shanxing5">
                     <!--<div class="sx1"></div>-->
                     <!--<div class="sx2"></div>-->
                     <!--<div class="sx3"></div>-->
                 <!--</div>-->
                 <div class="handclick">
                     <div class="hc1"></div>
-                    <div class="hc2"></div>
                     <div class="hc3"></div>
+                    <div class="hc2"></div>
                 </div>
 
                 <div class="hand"></div></div>
@@ -153,9 +153,7 @@
         pop("app-icon.png","APP","累计超百万用户，日均DAU达万余，良好的消费体验、高效的转化机制为商户带来稳定的优质客源。");
     });
     $(".hc2").click(function () {
-        $(".overlay").css("display","none");
         $(".pop").show();
-
         pop("online-icon.png","线上传播","健全的自媒体传播机制结合各类大号、KOL、主流媒体、行业媒体发布传播H5、软文形成完善的线上传播环。");
     });
     $(".hc3").click(function () {
@@ -169,9 +167,9 @@
 //        //pop("","","");
 //    });
 
-    $(document).on('click', '.close', function(){
-        $(".pop").css("display","none");
-    })
+    $(".pop").on('click', '.close', function(){
+        $(".pop").hide();
+    });
 
 //      app
 
