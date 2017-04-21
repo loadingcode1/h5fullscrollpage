@@ -68,8 +68,7 @@
         <div class="item item4">
             <!--<h2>page4</h2>-->
             <div class="tit"><span></span><p>商品分类</p></div>
-
-
+            <!--swiper-->
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">Slide 1</div>
@@ -83,8 +82,6 @@
             <div class="gestit">家电家居</div>
             <div class="gesture"><img src="images/gesture.png" alt=""></div>
             <div class="gestips">滑动窗口</div>
-            <!--<div class="part part1 heartBeat"></div>-->
-            <!--<div class="part part2 heartBeat"></div>-->
         </div>
         <div class="item item5">
             <!--<h2>page5</h2>-->
@@ -160,19 +157,10 @@
         $(".pop").show();
         pop("line-icon.png","线下推广","线下城市LED屏幕广告、公共交通广告及楼宇广告配合市场营销活动精准、直接、多频次的向目标用户进行品牌推广，加深用户记忆促成消费。");
     });
-//    $(".close").on("tap",".pop",function (e) {
-//        e.preventDefault();
-//        $(".pop,.overlay").css("display","none");
-//
-//        //pop("","","");
-//    });
-
+/*close*/
     $(".pop").on('click', '.close', function(){
         $(".pop").hide();
     });
-
-//      app
-
         function pop(img,tit,com) {
            var pop = "";
             pop = '<div class="close"><img src="images/close.png" alt=""></div><img src="images/'+img+'" class="popimg" alt=""><p class="poptit">'+tit+'</p><p class="popcom">'+com+'</p>';
