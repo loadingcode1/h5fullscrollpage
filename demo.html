@@ -65,15 +65,27 @@
                 <!--</li>-->
             <!--</ul>-->
         <!--</div>-->
-        <!--<div class="item item4">-->
-            <!--&lt;!&ndash;<h2>page4</h2>&ndash;&gt;-->
-            <!--<div class="tit"><span></span><p>商品分类</p></div>-->
-            <!--<div class="gestit">家电家居</div>-->
-            <!--<div class="gesture"><img src="images/gesture.png" alt=""></div>-->
-            <!--<div class="gestips">滑动窗口</div>-->
+        <div class="item item4">
+            <!--<h2>page4</h2>-->
+            <div class="tit"><span></span><p>商品分类</p></div>
+
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="gestit">家电家居</div>
+            <div class="gesture"><img src="images/gesture.png" alt=""></div>
+            <div class="gestips">滑动窗口</div>
             <!--<div class="part part1 heartBeat"></div>-->
             <!--<div class="part part2 heartBeat"></div>-->
-        <!--</div>-->
+        </div>
         <div class="item item5">
             <!--<h2>page5</h2>-->
             <div class="tit"><span></span><p>推广优势</p></div>
@@ -116,6 +128,8 @@
     </div>
     <script src="http://cdn.bootcss.com/zepto/1.0rc1/zepto.min.js"></script>
     <script type="text/javascript" src="H5FullscreenPage.js"></script>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="https://cdn.bootcss.com/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
     <script type="text/javascript">
     
     H5FullscreenPage.init({'type':2,'pageShow' : function(dom){
@@ -123,21 +137,35 @@
     },'pageHide' : function(dom){
         //console.log(dom);
     }});
+
+    var mySwiper = new Swiper ('.swiper-container', {
+        //自动播放
+        autoplay: 5000,
+        //滑动方向，默认水平，vertical为垂直
+       //direction: 'vertical',
+        //循环播放
+        loop: true
+    });
+
+
     $(".hc1").click(function () {
         $(".pop").show();
         pop("app-icon.png","APP","累计超百万用户，日均DAU达万余，良好的消费体验、高效的转化机制为商户带来稳定的优质客源。");
     });
     $(".hc2").click(function () {
+        $(".overlay").css("display","none");
         $(".pop").show();
+
         pop("online-icon.png","线上传播","健全的自媒体传播机制结合各类大号、KOL、主流媒体、行业媒体发布传播H5、软文形成完善的线上传播环。");
     });
     $(".hc3").click(function () {
         $(".pop").show();
         pop("line-icon.png","线下推广","线下城市LED屏幕广告、公共交通广告及楼宇广告配合市场营销活动精准、直接、多频次的向目标用户进行品牌推广，加深用户记忆促成消费。");
     });
-    $(".close").on("click","body",function (e) {
+    $(".close").on("tap",".pop",function (e) {
         e.preventDefault();
-        $(".pop").css("display","none");
+        $(".pop,.overlay").css("display","none");
+
         //pop("","","");
     });
 

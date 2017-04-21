@@ -379,7 +379,7 @@ div[state = "next"] em{
     left:50%;
     top:20%;
     margin-left:-2.81rem;
-    z-index: 100;
+    z-index: 1000;
 }
 .close{
     position: absolute;
@@ -460,7 +460,8 @@ div[state = "next"] em{
     position: relative;
     width: 4.5rem;
     height:4.7rem;
-}
+    margin: -5rem auto 0;
+    opacity: 0;}
 .handclick .hc1{
     width: 4.5rem;
     height:1.7rem;
@@ -480,7 +481,16 @@ div[state = "next"] em{
     border-bottom-left-radius:0rem;
     border-bottom-right-radius:2rem;
 }
-
+.swiper-container {
+    width: 600px;
+    height: 300px;
+}
+.swiper-slide{
+    width: 600px;
+    height: 300px;
+    background-color: #999999;
+    float: left;
+}
 
 
 
