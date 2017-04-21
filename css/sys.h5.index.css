@@ -482,13 +482,19 @@ div[state = "next"] em{
     border-bottom-right-radius:2rem;
 }
 .swiper-container {
-    width: 600px;
-    height: 300px;
+    margin:3.5rem auto .2rem;
+    width: 80%;
+    height: 3rem;
+    border:.1rem solid #fde0cd;
+    border-radius:.2rem;
 }
 .swiper-slide{
-    width: 600px;
-    height: 300px;
+    width: 100%;
+    height: .3rem;
     background-color: #999999;
+
+
+    box-shadow: .03rem .03rem .1rem #fdbe99;
     float: left;
 }
 
