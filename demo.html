@@ -162,12 +162,16 @@
         $(".pop").show();
         pop("line-icon.png","线下推广","线下城市LED屏幕广告、公共交通广告及楼宇广告配合市场营销活动精准、直接、多频次的向目标用户进行品牌推广，加深用户记忆促成消费。");
     });
-    $(".close").on("tap",".pop",function (e) {
-        e.preventDefault();
-        $(".pop,.overlay").css("display","none");
+//    $(".close").on("tap",".pop",function (e) {
+//        e.preventDefault();
+//        $(".pop,.overlay").css("display","none");
+//
+//        //pop("","","");
+//    });
 
-        //pop("","","");
-    });
+    $(document).on('click', '.close', function(){
+        $(".pop").css("display","none");
+    })
 
 //      app
 
